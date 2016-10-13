@@ -10,7 +10,7 @@ Character.destroy_all
 House.destroy_all
 
 stark = House.create({name:"Stark",img_url:"http://vignette4.wikia.nocookie.net/gameofthrones/images/8/8a/House-Stark-Main-Shield.PNG/revision/latest/scale-to-width-down/250?cb=20160703180116"})
-baratheon= House.create({name:"Baratheon",img_url:"http://vignette4.wikia.nocookie.net/gameofthrones/images/8/8a/House-Stark-Main-Shield.PNG/revision/latest/scale-to-width-down/250?cb=20160703180116"})
+baratheon= House.create({name:"Baratheon",img_url:"http://www.lagardedenuit.com/wiki/images/a/a5/Blason-baratheon-2014-v01-256px.png"})
 lannister = House.create({name:"Lannister", img_url:"http://www.lagardedenuit.com/wiki/images/e/e7/Blason-lannister-2014-v01-256px.png"})
 tyrell = House.create({name:"Tyrell", img_url:"http://www.lagardedenuit.com/wiki/images/f/f9/Blason-tyrell-2014-v01-256px.png"})
 tully = House.create({name:"Tully", img_url:"https://pbs.twimg.com/profile_images/2411069777/Tully.png"})
