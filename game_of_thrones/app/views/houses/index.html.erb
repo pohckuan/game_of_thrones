@@ -11,4 +11,5 @@
     <td><%= link_to house.name , house_path(house) %></td>
     <td> <img src="<%=house.img_url%>"></td>
     <td><%= link_to 'Edit', edit_house_path(house) %></td>
+    <td><%= link_to 'Delete', house_path(house), method: :delete %></td>
   <%end%>
