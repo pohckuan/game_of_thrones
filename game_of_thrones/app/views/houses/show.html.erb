@@ -1,10 +1,13 @@
 <h1><%= "House "+  @house.name%></h1>
 <img src =" <%=@house.img_url%>">
-
+<%= link_to 'Add Character', new_house_character_path(@house)%>
 
 <ul>
 <% @house.characters.each do |character|%>
 <li><%= link_to character.name, house_character_path(@house,character) %></li>
+<%= link_to 'Edit', edit_house_character_path(@house)%>
+<%= link_to 'Delete', house_character_path(@house, character), method: :delete, data:{confirm:'Are you sure?'}%>
+
 
 <%end%>
 </ul>

@@ -1,0 +1,18 @@
+<h1>Edit Character</h1>
+
+<%= form_for [@house, @character] do |t| %>
+<p>
+<%= t.label :name %>
+<%= t.text_field :name %>
+</p>
+
+<p>
+  <%= t.label :img_url %>
+  <%= t.text_field :img_url %>
+</p>
+
+<p>
+<%= t.submit %>
+</p>
+
+<%end%>
