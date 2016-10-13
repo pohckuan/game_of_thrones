@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Game of Thrones Houses</title>
+
+  </head>
+  <body>
+    <h1>Game of Thrones</h1>
+    <% @houses.each do |house| %>
+    <%= house.name %>
+    <img src="<%= house.img_url%>">
+  </body>
+</html>
