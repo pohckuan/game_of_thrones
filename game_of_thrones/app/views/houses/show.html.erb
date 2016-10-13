@@ -1,2 +1,8 @@
 <h1><%= "House "+  @house.name%></h1>
 <img src =" <%=@house.img_url%>">
+
+<ul>
+<% @house.characters.each do |character|%>
+<li><%= link_to character.name, house_character_path(@house,character) %></li>
+<%end%>
+</ul>
