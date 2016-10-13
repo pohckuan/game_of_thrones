@@ -10,4 +10,5 @@
     <tr>
     <td><%= link_to house.name , house_path(house) %></td>
     <td> <img src="<%=house.img_url%>"></td>
+    <td><%= link_to 'Edit', edit_house_path(house) %></td>
   <%end%>

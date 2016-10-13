@@ -12,6 +12,16 @@ end
     @house = House.new
   end
 
+  def edit
+    @house = House.find(params[:id])
+  end
+
+  def update
+    @house = House.find(params[:id])
+    @house.update(house_params)
+    redirect_to houses_path
+  end
+
   def create
     @house = House.create!(house_params)
     redirect_to houses_path
